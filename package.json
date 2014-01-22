@@ -1,0 +1,39 @@
+{
+  "name": "koan",
+  "description": "Koa.js Application Boilerplate",
+  "version": "0.0.1",
+  "dependencies": {
+    "koa": "~0.3.0",
+    "co": "~3.0.2",
+    "co-views": "~0.1.0",
+    "ejs": "~0.8.5",
+    "koa-logger": "~1.1.1",
+    "koa-route": "~1.0.2",
+    "co-body": "0.0.1"
+  },
+  "devDependencies": {
+    "co": "~3.0.2",
+    "supertest": "~0.9.0",
+    "mocha": "~1.17.0",
+    "supervisor": "~0.5.6"
+  },
+  "scripts": {
+    "start": "node --harmony index.js",
+    "debug": "node debug --harmony index.js",
+    "test": "PORT=9999 NODE_ENV=test mocha --harmony -R spec --recursive",
+    "autotest": "./node_modules/.bin/supervisor -i .tmp -q -n exit -x ./node_modules/.bin/mocha -- --harmony -R spec -G -b --recursive"
+  },
+  "engines": {
+    "node": ">= 11.3"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:bredikhin/koan.git"
+  },
+  "author": "Ruslan Bredikhin",
+  "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT"
+  }
+}
