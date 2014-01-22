@@ -1,6 +1,6 @@
 {
-  "name": "koan",
-  "description": "Koa.js Application Boilerplate",
+  "name": "newApplication",
+  "description": "Koa.js application based on Koan boilerplate",
   "version": "0.0.1",
   "dependencies": {
     "koa": "~0.3.0",
@@ -9,10 +9,7 @@
     "ejs": "~0.8.5",
     "koa-logger": "~1.1.1",
     "koa-route": "~1.0.2",
-    "co-body": "0.0.1",
-    "lodash": "~2.4.1",
-    "optimist": "~0.6.0",
-    "fs-extra": "~0.8.1"
+    "co-body": "0.0.1"
   },
   "devDependencies": {
     "co": "~3.0.2",
@@ -30,16 +27,7 @@
     "node": ">= 11.3"
   },
   "main": "index.js",
-  "bin": {
-    "koan": "./bin/koan.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com:bredikhin/koan.git"
-  },
-  "author": "Ruslan Bredikhin",
-  "license": {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT"
-  }
+  "repository": "",
+  "author": "",
+  "license": ""
 }

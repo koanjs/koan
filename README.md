@@ -2,7 +2,13 @@
 
 ## Installation
 
-...
+`sudo npm install -g koan`
+
+## Usage
+
+1. `koan new myapp` creates a subfolder `myapp` in the current directory with the new application boilerplate in it
+2. Don't forget to run `npm install` to install dependencies
+3. Start your application with `koan start`
 
 ## Dependencies
 
@@ -16,7 +22,9 @@
 
 ## TODO
 
-* Boilerplate generation style `koan new app_name`
+* Generate `README`, `package.json`, etc. for the new application dynamically
+* New application generation: verify if the folder exists
+* Tests for the new application generation
 
 ## Contributions
 
@@ -28,4 +36,4 @@
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013 [Ruslan Bredikhin](http://ruslanbredikhin.com/)
+Copyright (c) 2013-2014 [Ruslan Bredikhin](http://ruslanbredikhin.com/)
