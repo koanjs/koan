@@ -1,7 +1,7 @@
 {
   "name": "koan",
-  "description": "Koa.js Application Boilerplate",
-  "version": "0.0.1",
+  "description": "Koa.js application boilerplate",
+  "version": "0.0.2",
   "dependencies": {
     "koa": "~0.3.0",
     "co": "~3.0.2",
@@ -29,7 +29,10 @@
   "engines": {
     "node": ">= 11.3"
   },
-  "main": "index.js",
+  "main": "./lib/index",
+  "directories": {
+    "lib": "lib"
+  },
   "bin": {
     "koan": "./bin/koan.js"
   },
