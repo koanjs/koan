@@ -3,6 +3,7 @@
   "description": "Koa.js application based on Koan boilerplate",
   "version": "0.0.1",
   "dependencies": {
+    "koan": "~0.0.2",
     "koa": "~0.3.0",
     "co": "~3.0.2",
     "co-views": "~0.1.0",
