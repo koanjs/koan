@@ -4,7 +4,6 @@
   "version": "0.0.3",
   "dependencies": {
     "koa": "~0.3.0",
-    "co": "~3.0.2",
     "co-views": "~0.1.0",
     "ejs": "~0.8.5",
     "koa-logger": "~1.1.1",
@@ -12,7 +11,8 @@
     "co-body": "0.0.1",
     "lodash": "~2.4.1",
     "optimist": "~0.6.0",
-    "fs-extra": "~0.8.1"
+    "fs-extra": "~0.8.1",
+    "koa-static": "~1.4.2"
   },
   "devDependencies": {
     "co": "~3.0.2",
