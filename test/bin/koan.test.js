@@ -1,5 +1,7 @@
+'use strict';
+
 /**
- * Module dependencies
+ * Dependencies
  */
 var assert = require('assert')
   , fs = require('fs')

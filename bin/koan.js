@@ -1,9 +1,11 @@
 #!/usr/bin/env node --harmony
+'use strict';
 
-var argv = require('optimist').argv;
-
-// Dependencies
-var _ = require('lodash')
+/**
+ * Dependencies
+ */
+var argv = require('optimist').argv
+  , _ = require('lodash')
   , path = require('path')
   , fs = require('fs-extra');
 
