@@ -1,4 +1,4 @@
-# Koan: A Koa.js Application Boilerplate
+# Koan.js: A Koa.js Application Boilerplate
 
 ## Installation
 
