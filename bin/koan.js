@@ -33,7 +33,7 @@ else if (argv._[0].match(/^new$/)) {
 
   var destination = path.join(process.cwd(), argv._[1]);
 
-  fs.copy(path.join(__dirname, '../lib/boilerplates'), destination,  function(err) {
+  fs.copy(path.join(__dirname, '../lib/boilerplates/application'), destination,  function(err) {
     if (err) {
       console.error(err);
       process.exit(1);
