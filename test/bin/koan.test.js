@@ -1,5 +1,95 @@
+/**
+ * Module dependencies
+ */
+var assert = require('assert')
+  , fs = require('fs')
+  , wrench = require('wrench')
+  , _ = require('lodash')
+  , path = require('path')
+  , exec = require('child_process').exec;
+
 describe('Generate', function(){
   describe('New application', function(){
-    it('should create a new application');
+    var bin = './bin/koan.js';
+    var appName = 'testApp';
+
+    beforeEach(function(done) {
+      fs.exists(appName, function(exists) {
+        if (exists) {
+          wrench.rmdirSyncRecursive(appName);
+        }
+        done();
+      });
+    });
+
+    afterEach(function(done) {
+      fs.exists(appName, function(exists) {
+        if (exists) {
+          wrench.rmdirSyncRecursive(appName);
+        }
+        done();
+      });
+    });
+
+    it('should create a new application', function(done) {
+      exec(bin + ' new ' + appName, function(err) {
+        if (err)
+          return done(new Error(err));
+
+        wrench.rmdirSyncRecursive(path.join(appName, 'node_modules'));
+        assert(checkGeneratedFiles(appName), 'generated files don\'t match expected files');
+        done();
+      });
+    });
   });
 });
+
+
+function checkGeneratedFiles(appName) {
+  var expectedFiles = [
+          '.gitignore',
+          'index.js',
+          'public',
+          'config',
+          'package.json',
+          'README.md',
+          'views',
+          'views/home.ejs',
+          'public/images',
+          'public/js',
+          'public/robots.txt',
+          'public/css',
+          'public/images/.gitkeep',
+          'public/js/.gitkeep',
+          'public/css/.gitkeep',
+          'config/routes.js',
+          'test',
+          'test/index.test.js',
+          'test/mocha.opts'
+  ];
+
+  // Read actual generated files from disk
+  var files = wrench.readdirSyncRecursive(appName);
+
+  // Disregard stupid files
+  // (fs-specific, OS-specific, editor-specific, yada yada)
+  files = _.reject(files, function(f) {
+    return f.match(/^node_modules/) || f.match(/.DS_Store/gi) || f.match(/\*~$/);
+  });
+
+  // Generate diff
+  var diff = _.difference(files, expectedFiles);
+
+  // Uneven # of files
+  if (files.length !== expectedFiles.length) {
+    return false;
+  }
+
+  // Files don't match
+  if (diff.length !== 0) {
+    return false;
+  }
+
+  // Everything's ok!
+  return true;
+}
