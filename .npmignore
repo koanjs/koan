@@ -1,0 +1,15 @@
+# Node.js
+.npmignore
+node_modules/
+npm-debug.log
+coverage.html
+
+# Mac OS X
+.DS_Store
+
+# Git
+.git*
+
+# Utilities
+.jshintrc
+.travis.yml
