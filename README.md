@@ -2,6 +2,8 @@
 
 ![Define Koan](https://raw.github.com/bredikhin/koan/master/lib/boilerplates/application/public/images/define_koan.png)
 
+[![Build Status](https://travis-ci.org/bredikhin/koan.png?branch=master)](https://travis-ci.org/bredikhin/koan)
+
 ## What is Koa.js?
 
 [Koa.js](https://github.com/koajs/koa) is a modern Web framework designed by the team
