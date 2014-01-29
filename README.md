@@ -1,5 +1,7 @@
 # Koan.js: A Koa.js Application Boilerplate
 
+![Define Koan](https://raw.github.com/bredikhin/koan/master/lib/boilerplates/application/public/images/define_koan.png)
+
 ## What is Koa.js?
 
 [Koa.js](https://github.com/koajs/koa) is a modern Web framework designed by the team
