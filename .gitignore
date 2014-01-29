@@ -18,6 +18,9 @@ node_modules
 
 npm-debug.log
 
+coverage
+coverage.html
+
 ########################
 # bower
 ########################
@@ -33,8 +36,3 @@ bower_components
 nbproject
 .idea
 *.iml
-
-########################
-# local config
-########################
-#config/local.js

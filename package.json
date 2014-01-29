@@ -28,12 +28,14 @@
   "devDependencies": {
     "mocha": "~1.17.0",
     "supervisor": "~0.5.6",
-    "wrench": "~1.5.6"
+    "wrench": "~1.5.6",
+    "coveralls": "~2.7.0",
+    "istanbul": "~0.2.4"
   },
   "scripts": {
     "start": "node --harmony index.js",
     "debug": "node debug --harmony index.js",
-    "test": "PORT=9999 NODE_ENV=test mocha --harmony -R spec --recursive",
+    "test": "PORT=9999 NODE_ENV=test node --harmony ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha  -- -R spec --recursive",
     "autotest": "./node_modules/.bin/supervisor -i .tmp -q -n exit -x ./node_modules/.bin/mocha -- --harmony -R spec -G -b --recursive"
   },
   "engines": {
