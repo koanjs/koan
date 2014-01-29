@@ -38,7 +38,10 @@ describe('Generate', function(){
         if (err)
           return done(new Error(err));
 
-        wrench.rmdirSyncRecursive(path.join(appName, 'node_modules'));
+        var nodeModulesPath = path.join(appName, 'node_modules');
+        if (fs.existsSync(nodeModulesPath))
+          wrench.rmdirSyncRecursive(nodeModulesPath);
+
         assert(checkGeneratedFiles(appName), 'generated files don\'t match expected files');
         done();
       });
