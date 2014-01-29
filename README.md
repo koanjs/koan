@@ -40,18 +40,13 @@ shot.
 ## Dependencies
 
 * [Koa.js](https://github.com/koajs/koa) as the main application framework,
-* [co-views](https://github.com/visionmedia/co-views) for template rendering,
-* [koa-logger](https://github.com/koajs/logger) as logger middleware,
-* [koa-route](https://github.com/koajs/route) for routing,
-* [koa-static](https://github.com/koajs/static) to serve static assets,
-* [lodash](https://github.com/lodash/lodash) utilities,
-* [optimist](https://github.com/substack/node-optimist) for option parsing,
-* [fs-extra](https://github.com/jprichardson/node-fs-extra) for recursive file system operations.
-
-## TODO
-
-* Generate `README`, `package.json`, etc. for the new application dynamically
-* New application generation: verify if the folder exists
+* [Co-views](https://github.com/visionmedia/co-views) for template rendering,
+* [Koa-logger](https://github.com/koajs/logger) as logger middleware,
+* [Koa-route](https://github.com/koajs/route) for routing,
+* [Koa-static](https://github.com/koajs/static) to serve static assets,
+* [Lodash](https://github.com/lodash/lodash) utilities,
+* [Optimist](https://github.com/substack/node-optimist) for option parsing,
+* [Fs-extra](https://github.com/jprichardson/node-fs-extra) for recursive file system operations.
 
 ## Contributions
 
