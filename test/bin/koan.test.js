@@ -62,6 +62,7 @@ function checkGeneratedFiles(appName) {
           'public/robots.txt',
           'public/css',
           'public/images/.gitkeep',
+          'public/images/define_koan.png',
           'public/js/.gitkeep',
           'public/css/.gitkeep',
           'config/routes.js',
