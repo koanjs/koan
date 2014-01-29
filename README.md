@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/bredikhin/koan.png?branch=master)](https://travis-ci.org/bredikhin/koan)
 [![Dependency Status](https://gemnasium.com/bredikhin/koan.png)](https://gemnasium.com/bredikhin/koan)
+[![Coverage Status](https://coveralls.io/repos/bredikhin/koan/badge.png)](https://coveralls.io/r/bredikhin/koan)
 
 ## What is Koa.js?
 
