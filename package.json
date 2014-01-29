@@ -1,7 +1,7 @@
 {
   "name": "koan",
   "description": "Koa.js application boilerplate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "koa": "~0.3.0",
     "co-views": "~0.1.0",
@@ -24,7 +24,7 @@
     "autotest": "./node_modules/.bin/supervisor -i .tmp -q -n exit -x ./node_modules/.bin/mocha -- --harmony -R spec -G -b --recursive"
   },
   "engines": {
-    "node": ">= 11.3"
+    "node": ">= 0.11.3"
   },
   "main": "./lib/index",
   "directories": {
