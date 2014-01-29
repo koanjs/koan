@@ -15,7 +15,7 @@ describe('Generate', function(){
     var bin = './bin/koan.js';
     var appName = 'testApp';
 
-    beforeEach(function(done) {
+    before(function(done) {
       fs.exists(appName, function(exists) {
         if (exists) {
           wrench.rmdirSyncRecursive(appName);
@@ -24,7 +24,7 @@ describe('Generate', function(){
       });
     });
 
-    afterEach(function(done) {
+    after(function(done) {
       fs.exists(appName, function(exists) {
         if (exists) {
           wrench.rmdirSyncRecursive(appName);
@@ -43,6 +43,16 @@ describe('Generate', function(){
           wrench.rmdirSyncRecursive(nodeModulesPath);
 
         assert(checkGeneratedFiles(appName), 'generated files don\'t match expected files');
+        done();
+      });
+    });
+
+    it('should test the new application successfully', function(done) {
+      exec('cd ' + appName + ' && npm install && npm test', function(err) {
+        if (err)
+          return done(new Error(err));
+
+        assert(!err, 'an error occurred while trying to test a newly created application');
         done();
       });
     });
