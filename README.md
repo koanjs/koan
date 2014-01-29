@@ -3,6 +3,7 @@
 ![Define Koan](https://raw.github.com/bredikhin/koan/master/lib/boilerplates/application/public/images/define_koan.png)
 
 [![Build Status](https://travis-ci.org/bredikhin/koan.png?branch=master)](https://travis-ci.org/bredikhin/koan)
+[![Dependency Status](https://gemnasium.com/bredikhin/koan.png)](https://gemnasium.com/bredikhin/koan)
 
 ## What is Koa.js?
 
