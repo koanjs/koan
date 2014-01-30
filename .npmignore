@@ -2,6 +2,7 @@
 .npmignore
 node_modules/
 npm-debug.log
+coverage/
 coverage.html
 
 # Mac OS X

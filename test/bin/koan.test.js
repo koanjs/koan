@@ -12,7 +12,7 @@ var assert = require('assert')
 
 describe('Generate', function(){
   describe('New application', function(){
-    var bin = 'node --harmony ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./bin/koan.js --dir ./coverage/generator';
+    var bin = './bin/koan.js';
     var appName = 'testApp';
 
     before(function(done) {
