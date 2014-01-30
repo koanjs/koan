@@ -1,3 +1,5 @@
+test/
+
 # Node.js
 .npmignore
 node_modules/
