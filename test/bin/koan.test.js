@@ -79,6 +79,8 @@ function checkGeneratedFiles(appName) {
           'public/js/.gitkeep',
           'public/css/.gitkeep',
           'config/routes.js',
+          'config/options.js',
+          'config/index.js',
           'test',
           'test/index.test.js',
           'test/mocha.opts'
