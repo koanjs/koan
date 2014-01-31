@@ -81,6 +81,9 @@ function checkGeneratedFiles(appName) {
           'config/routes.js',
           'config/options.js',
           'config/index.js',
+          'config/environments',
+          'config/environments/development.js',
+          'config/environments/production.js',
           'test',
           'test/index.test.js',
           'test/mocha.opts'
