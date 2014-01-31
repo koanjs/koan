@@ -1,4 +1,4 @@
-#!/usr/bin/env node --harmony
+#!/usr/bin/env node
 'use strict';
 
 /**
@@ -7,7 +7,8 @@
 var argv = require('optimist').argv
   , _ = require('lodash')
   , path = require('path')
-  , fs = require('fs-extra');
+  , fs = require('fs-extra')
+  , fork = require('child_process').fork;
 
 // Stringify args
 argv._ = _.map(argv._, function (arg) {
@@ -16,7 +17,7 @@ argv._ = _.map(argv._, function (arg) {
 
 // Start this app
 if (argv._[0] && _.contains(['start', 'server', 's'], argv._[0])) {
-  require(path.join(process.cwd(), 'index'));
+  fork(path.join(process.cwd(), 'index'), [], {execArgv: ['--harmony']});
 }
 
 // Basic usage
