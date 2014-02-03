@@ -23,7 +23,9 @@
     "koa-static": "~1.4.2",
     "lodash": "~2.4.1",
     "optimist": "~0.6.0",
-    "fs-extra": "~0.8.1"
+    "fs-extra": "~0.8.1",
+    "koa-response-time": "~1.0.1",
+    "koa-compress": "~1.0.2"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
