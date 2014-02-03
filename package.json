@@ -25,7 +25,10 @@
     "optimist": "~0.6.0",
     "fs-extra": "~0.8.1",
     "koa-response-time": "~1.0.1",
-    "koa-compress": "~1.0.2"
+    "koa-compress": "~1.0.2",
+    "koa-ratelimit": "~1.0.1",
+    "redis": "~0.10.0",
+    "ejs": "~0.8.5"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
