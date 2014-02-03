@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Koan by bredikhin</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Koan</h1>
+        <h2>Koa.js Application Boilerplate</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/bredikhin/koan/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/bredikhin/koan/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/bredikhin/koan" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="koanjs-a-koajs-application-boilerplate" class="anchor" href="#koanjs-a-koajs-application-boilerplate"><span class="octicon octicon-link"></span></a>Koan.js: A Koa.js Application Boilerplate</h1>
+
+<p><img src="https://raw.github.com/bredikhin/koan/master/lib/boilerplates/application/public/images/define_koan.png" alt="Define Koan"></p>
+
+<p><a href="https://travis-ci.org/bredikhin/koan"><img src="https://travis-ci.org/bredikhin/koan.png?branch=master" alt="Build Status"></a>
+<a href="https://gemnasium.com/bredikhin/koan"><img src="https://gemnasium.com/bredikhin/koan.png" alt="Dependency Status"></a></p>
+
+<h2>
+<a name="what-is-koajs" class="anchor" href="#what-is-koajs"><span class="octicon octicon-link"></span></a>What is Koa.js?</h2>
+
+<p><a href="https://github.com/koajs/koa">Koa.js</a> is a modern Web framework designed by the team
+behind <a href="https://github.com/visionmedia/express">Express.js</a>. While being lean and
+minimalistic, it has all the functionality needed in order to create robust and
+powerful Web-applications.</p>
+
+<h2>
+<a name="so-why-do-we-need-koanjs" class="anchor" href="#so-why-do-we-need-koanjs"><span class="octicon octicon-link"></span></a>So why do we need Koan.js?</h2>
+
+<p>An average Web-application often contains some common components (e.g. routing, public
+folder, view rendering, etc.), and Koan.js provides you with a boilerplate having
+many of these components already in place. Also, it proposes a way to organize
+application features in a unified way.</p>
+
+<h2>
+<a name="is-it-the-right-way-to-build-web-applications-with-koajs" class="anchor" href="#is-it-the-right-way-to-build-web-applications-with-koajs"><span class="octicon octicon-link"></span></a>Is it the right way to build Web-applications with Koa.js?</h2>
+
+<p>It's just one of many, many possible ways. The beauty of
+<a href="https://github.com/koajs/koa">Koa.js</a> (or
+<a href="https://github.com/visionmedia/express">Express.js</a>) is in its incredible flexibility
+giving you freedom to organize your application however you feel is right. But if you
+want just save your time and go with an existing solution, Koan.js definitely worth a
+shot.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p><code>sudo npm install -g koan</code></p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li>
+<code>koan new myapp</code> creates a subfolder <code>myapp</code> in the current directory with the new application boilerplate in it.</li>
+<li>Don't forget to run <code>npm install</code> to install dependencies.</li>
+<li>Start your application with <code>koan start</code> (or just usual <code>node index.js</code>).</li>
+<li>Run tests with <code>npm test</code>.</li>
+<li>Autotest with <code>npm run autotest</code>.</li>
+</ol><h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li>
+<a href="https://github.com/koajs/koa">Koa.js</a> as the main application framework,</li>
+<li>
+<a href="https://github.com/visionmedia/co-views">Co-views</a> for template rendering,</li>
+<li>
+<a href="https://github.com/koajs/logger">Koa-logger</a> as logger middleware,</li>
+<li>
+<a href="https://github.com/koajs/route">Koa-route</a> for routing,</li>
+<li>
+<a href="https://github.com/koajs/static">Koa-static</a> to serve static assets,</li>
+<li>
+<a href="https://github.com/lodash/lodash">Lodash</a> utilities,</li>
+<li>
+<a href="https://github.com/substack/node-optimist">Optimist</a> for option parsing,</li>
+<li>
+<a href="https://github.com/jprichardson/node-fs-extra">Fs-extra</a> for recursive file system operations.</li>
+</ul><h2>
+<a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
+
+<ul>
+<li>are welcome;</li>
+<li>should be tested;</li>
+<li>should follow <a href="https://github.com/koajs/koa">Koa.js</a> coding style.</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://opensource.org/licenses/MIT">The MIT License</a></p>
+
+<p>Copyright (c) 2013-2014 <a href="http://ruslanbredikhin.com/">Ruslan Bredikhin</a></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
