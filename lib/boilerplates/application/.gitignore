@@ -19,11 +19,6 @@ node_modules
 npm-debug.log
 
 ########################
-# bower
-########################
-bower_components
-
-########################
 # misc / editors
 ########################
 *~
@@ -33,8 +28,3 @@ bower_components
 nbproject
 .idea
 *.iml
-
-########################
-# local config
-########################
-#config/local.js
