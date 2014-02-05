@@ -17,7 +17,7 @@ powerful Web-applications.
 An average Web-application often contains some common components (e.g. routing, public
 folder, view rendering, etc.), and Koan.js provides you with a boilerplate having
 many of these components already in place. Also, it proposes a way to organize
-application features in a unified way.
+application features.
 
 ## Is it the right way to build Web-applications with Koa.js?
 
