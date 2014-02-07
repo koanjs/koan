@@ -29,7 +29,8 @@
     "koa-ratelimit": "~1.0.1",
     "redis": "~0.10.0",
     "ejs": "~0.8.5",
-    "koa-session": "~1.2.1"
+    "koa-session": "~1.2.1",
+    "koa-compose": "~2.2.0"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
