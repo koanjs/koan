@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/bredikhin/koan.png?branch=master)](https://travis-ci.org/bredikhin/koan)
 [![Dependency Status](https://gemnasium.com/bredikhin/koan.png)](https://gemnasium.com/bredikhin/koan)
+[![NPM version](https://badge.fury.io/js/koan.png)](http://badge.fury.io/js/koan)
+
 
 ## What is Koa.js?
 
