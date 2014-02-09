@@ -34,6 +34,8 @@ shot.
 
 `sudo npm install -g koan`
 
+[![NPM](https://nodei.co/npm/koan.png?downloads=true)](https://nodei.co/npm/koan/)
+
 ## Usage
 
 1. `koan new myapp` creates a subfolder `myapp` in the current directory with the new application boilerplate in it.
