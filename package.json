@@ -53,7 +53,11 @@
     "koan": "./bin/koan.js"
   },
   "jshintConfig": {
-    "strict": "false"
+    "strict": false,
+    "global": {
+      "module": true,
+      "app": true
+    }
   },
   "repository": {
     "type": "git",
