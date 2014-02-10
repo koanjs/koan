@@ -3,15 +3,15 @@
 /**
  * Dependencies
  */
-var assert = require('assert')
-  , fs = require('fs')
-  , wrench = require('wrench')
-  , _ = require('lodash')
-  , path = require('path')
-  , exec = require('child_process').exec;
+var assert = require('assert');
+var fs = require('fs');
+var wrench = require('wrench');
+var _ = require('lodash');
+var path = require('path');
+var exec = require('child_process').exec;
 
-describe('Generate', function(){
-  describe('New application', function(){
+describe('Generate', function() {
+  describe('New application', function() {
     var bin = './bin/koan.js';
     var appName = 'testApp';
 
@@ -62,36 +62,36 @@ describe('Generate', function(){
 
 function checkGeneratedFiles(appName) {
   var expectedFiles = [
-          '.gitignore',
-          'index.js',
-          'public',
-          'config',
-          'package.json',
-          'README.md',
-          'controllers',
-          'controllers/index.js',
-          'controllers/pages.js',
-          'views',
-          'views/home.ejs',
-          'views/pages',
-          'views/pages/about.ejs',
-          'public/images',
-          'public/js',
-          'public/robots.txt',
-          'public/css',
-          'public/images/.gitkeep',
-          'public/images/define_koan.png',
-          'public/js/.gitkeep',
-          'public/css/.gitkeep',
-          'config/routes.js',
-          'config/options.js',
-          'config/index.js',
-          'config/environments',
-          'config/environments/development.js',
-          'config/environments/production.js',
-          'test',
-          'test/index.test.js',
-          'test/mocha.opts'
+    '.gitignore',
+    'index.js',
+    'public',
+    'config',
+    'package.json',
+    'README.md',
+    'controllers',
+    'controllers/index.js',
+    'controllers/pages.js',
+    'views',
+    'views/home.ejs',
+    'views/pages',
+    'views/pages/about.ejs',
+    'public/images',
+    'public/js',
+    'public/robots.txt',
+    'public/css',
+    'public/images/.gitkeep',
+    'public/images/define_koan.png',
+    'public/js/.gitkeep',
+    'public/css/.gitkeep',
+    'config/routes.js',
+    'config/options.js',
+    'config/index.js',
+    'config/environments',
+    'config/environments/development.js',
+    'config/environments/production.js',
+    'test',
+    'test/index.test.js',
+    'test/mocha.opts'
   ];
 
   // Read actual generated files from disk
