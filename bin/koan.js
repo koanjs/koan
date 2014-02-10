@@ -4,11 +4,11 @@
 /**
  * Dependencies
  */
-var argv = require('optimist').argv
-  , _ = require('lodash')
-  , path = require('path')
-  , fs = require('fs-extra')
-  , fork = require('child_process').fork;
+var argv = require('optimist').argv;
+var _ = require('lodash');
+var path = require('path');
+var fs = require('fs-extra');
+var fork = require('child_process').fork;
 
 // Stringify args
 argv._ = _.map(argv._, function (arg) {
