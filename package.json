@@ -53,9 +53,6 @@
   "bin": {
     "koan": "./bin/koan.js"
   },
-  "jshintConfig": {
-    "strict": false
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com:bredikhin/koan.git"
