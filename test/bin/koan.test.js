@@ -83,6 +83,8 @@ function checkGeneratedFiles(appName) {
     'public/images/define_koan.png',
     'public/js/.gitkeep',
     'public/css/.gitkeep',
+    'config/middleware.js',
+    'config/redis.js',
     'config/routes.js',
     'config/options.js',
     'config/index.js',
