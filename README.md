@@ -34,7 +34,7 @@ shot.
 
 `sudo npm install -g koan`
 
-[![NPM](https://nodei.co/npm/koan.png?downloads=true)](https://nodei.co/npm/koan/)
+[![NPM](https://nodei.co/npm/koan.png)](https://nodei.co/npm/koan/)
 
 ## Usage
 
