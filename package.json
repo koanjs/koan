@@ -58,6 +58,7 @@
   "bin": {
     "koan": "./bin/koan.js"
   },
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "git://github.com:bredikhin/koan.git"
