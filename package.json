@@ -7,9 +7,13 @@
     "koa",
     "web",
     "web-framework",
+    "framework",
     "mvc",
     "app",
     "application",
+    "generators",
+    "es6",
+    "harmony",
     "koan",
     "koanjs",
     "koan.js",
@@ -30,7 +34,8 @@
     "redis": "~0.10.0",
     "ejs": "~0.8.5",
     "koa-session": "~1.2.1",
-    "koa-compose": "~2.2.0"
+    "koa-compose": "~2.2.0",
+    "koa-etag": "~1.2.2"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
