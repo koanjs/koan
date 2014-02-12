@@ -54,6 +54,14 @@ shot.
 * [Lodash](https://github.com/lodash/lodash) utilities,
 * [Optimist](https://github.com/substack/node-optimist) for option parsing,
 * [Fs-extra](https://github.com/jprichardson/node-fs-extra) for recursive file system operations.
+* [Koa-response-time](https://github.com/koajs/response-time) for X-Response-Time header,
+* [Koa-compress](https://github.com/koajs/compress) to enable response compression,
+* [Koa-ratelimit](https://github.com/koajs/ratelimit) for rate limiting,
+* [Koa-session](https://github.com/koajs/session) for session support,
+* [Koa-compose](https://github.com/koajs/compose) to compose middleware,
+* [Koa-etag](https://github.com/koajs/etag) for ETag support,
+* [Redis](https://github.com/mranney/node_redis) for temporary storage,
+* [Ejs](https://github.com/visionmedia/ejs) for templating.
 
 ## Contributions
 
