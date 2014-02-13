@@ -35,7 +35,8 @@
     "ejs": "~0.8.5",
     "koa-session": "~1.2.1",
     "koa-compose": "~2.2.0",
-    "koa-etag": "~1.2.2"
+    "koa-etag": "~1.2.2",
+    "koa-conditional-get": "~1.0.1"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
