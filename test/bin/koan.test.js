@@ -71,6 +71,8 @@ function checkGeneratedFiles(appName) {
     'controllers',
     'controllers/index.js',
     'controllers/pages.js',
+    'models',
+    'models/.gitkeep',
     'views',
     'views/home.ejs',
     'views/pages',
@@ -91,6 +93,7 @@ function checkGeneratedFiles(appName) {
     'config/environments',
     'config/environments/development.js',
     'config/environments/production.js',
+    'config/environments/test.js',
     'test',
     'test/index.test.js',
     'test/mocha.opts'
