@@ -39,10 +39,18 @@ shot.
 ## Usage
 
 1. `koan new myapp` creates a subfolder `myapp` in the current directory with the new application boilerplate in it.
-2. Don't forget to run `npm install` to install dependencies.
+2. Use `npm install` to install dependencies.
 3. Start your application with `koan start` (or just usual `node index.js`).
 4. Run tests with `npm test`.
 5. Autotest with `npm run autotest`.
+
+## Configuration
+
+* Add or disable middleware your new Koan application requires in `config/middleware.js`.
+* Configure your routes in `config/routes.js`.
+* Set other application options in `config/options.js`, they will be available during
+runtime via `app.options`.
+
 
 ## Dependencies
 
