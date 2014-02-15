@@ -36,7 +36,9 @@
     "koa-session": "~1.2.1",
     "koa-compose": "~2.2.0",
     "koa-etag": "~1.2.2",
-    "koa-conditional-get": "~1.0.1"
+    "koa-conditional-get": "~1.0.1",
+    "commander": "~2.1.0",
+    "colors": "~0.6.2"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
