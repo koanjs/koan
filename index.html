@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Koan: a Koa.js Application Boilerplate</title>
+    <title>Koan by bredikhin</title>
   </head>
 
   <body>
@@ -34,7 +34,9 @@
 <p><img src="https://raw.github.com/bredikhin/koan/master/lib/boilerplates/application/public/images/define_koan.png" alt="Define Koan"></p>
 
 <p><a href="https://travis-ci.org/bredikhin/koan"><img src="https://travis-ci.org/bredikhin/koan.png?branch=master" alt="Build Status"></a>
-<a href="https://gemnasium.com/bredikhin/koan"><img src="https://gemnasium.com/bredikhin/koan.png" alt="Dependency Status"></a></p>
+<a href="https://gemnasium.com/bredikhin/koan"><img src="https://gemnasium.com/bredikhin/koan.png" alt="Dependency Status"></a>
+<a href="https://codeclimate.com/github/bredikhin/koan"><img src="https://codeclimate.com/github/bredikhin/koan.png" alt="Code Climate"></a>
+<a href="http://badge.fury.io/js/koan"><img src="https://badge.fury.io/js/koan.png" alt="NPM version"></a></p>
 
 <h2>
 <a name="what-is-koajs" class="anchor" href="#what-is-koajs"><span class="octicon octicon-link"></span></a>What is Koa.js?</h2>
@@ -50,7 +52,7 @@ powerful Web-applications.</p>
 <p>An average Web-application often contains some common components (e.g. routing, public
 folder, view rendering, etc.), and Koan.js provides you with a boilerplate having
 many of these components already in place. Also, it proposes a way to organize
-application features in a unified way.</p>
+application features.</p>
 
 <h2>
 <a name="is-it-the-right-way-to-build-web-applications-with-koajs" class="anchor" href="#is-it-the-right-way-to-build-web-applications-with-koajs"><span class="octicon octicon-link"></span></a>Is it the right way to build Web-applications with Koa.js?</h2>
@@ -67,17 +69,27 @@ shot.</p>
 
 <p><code>sudo npm install -g koan</code></p>
 
+<p><a href="https://nodei.co/npm/koan/"><img src="https://nodei.co/npm/koan.png" alt="NPM"></a></p>
+
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <ol>
 <li>
 <code>koan new myapp</code> creates a subfolder <code>myapp</code> in the current directory with the new application boilerplate in it.</li>
-<li>Don't forget to run <code>npm install</code> to install dependencies.</li>
+<li>Use <code>npm install</code> to install dependencies.</li>
 <li>Start your application with <code>koan start</code> (or just usual <code>node index.js</code>).</li>
 <li>Run tests with <code>npm test</code>.</li>
 <li>Autotest with <code>npm run autotest</code>.</li>
 </ol><h2>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<ul>
+<li>Add or disable middleware your new Koan application requires in <code>config/middleware.js</code>.</li>
+<li>Configure your routes in <code>config/routes.js</code>.</li>
+<li>Set other application options in <code>config/options.js</code>, they will be available during
+runtime via <code>app.options</code>.</li>
+</ul><h2>
 <a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
 <ul>
@@ -97,6 +109,22 @@ shot.</p>
 <a href="https://github.com/substack/node-optimist">Optimist</a> for option parsing,</li>
 <li>
 <a href="https://github.com/jprichardson/node-fs-extra">Fs-extra</a> for recursive file system operations.</li>
+<li>
+<a href="https://github.com/koajs/response-time">Koa-response-time</a> for X-Response-Time header,</li>
+<li>
+<a href="https://github.com/koajs/compress">Koa-compress</a> to enable response compression,</li>
+<li>
+<a href="https://github.com/koajs/ratelimit">Koa-ratelimit</a> for rate limiting,</li>
+<li>
+<a href="https://github.com/koajs/session">Koa-session</a> for session support,</li>
+<li>
+<a href="https://github.com/koajs/compose">Koa-compose</a> to compose middleware,</li>
+<li>
+<a href="https://github.com/koajs/etag">Koa-etag</a> for ETag support,</li>
+<li>
+<a href="https://github.com/mranney/node_redis">Redis</a> for temporary storage,</li>
+<li>
+<a href="https://github.com/visionmedia/ejs">Ejs</a> for templating.</li>
 </ul><h2>
 <a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
 
