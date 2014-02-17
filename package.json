@@ -43,7 +43,8 @@
   "devDependencies": {
     "mocha": "~1.17.0",
     "supervisor": "~0.5.6",
-    "wrench": "~1.5.6"
+    "wrench": "~1.5.6",
+    "should": "~3.1.2"
   },
   "scripts": {
     "start": "node --harmony index.js",

@@ -9,6 +9,11 @@ var commander = require('commander');
 var NOOP = function () {};
 
 /**
+ * Expose commander
+ */
+module.exports = commander;
+
+/**
  * Normalizing the arguments
  */
 process.argv = _.map(process.argv, function(arg) {
@@ -65,5 +70,5 @@ commander.unknownOption = NOOP;
 
 commander.parse(process.argv);
 
-if (commander.args.length === 0)
+if ((process.env.NODE_ENV !== 'test')&&(commander.args.length === 0))
   commander.help();
