@@ -1,10 +1,13 @@
 /**
- * New application generation
+ * Application start
  */
 
 /**
  * Dependencies
  */
-var colors = require('colors');
+var path = require('path');
+var fork = require('child_process').fork;
 
-module.exports = function () {};
+module.exports = function () {
+  fork(path.join(process.cwd(), 'index'), [], {execArgv: ['--harmony']});
+};
