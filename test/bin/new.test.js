@@ -3,11 +3,13 @@
 /**
  * Dependencies
  */
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var wrench = require('wrench');
 var _ = require('lodash');
 var path = require('path');
+var commander = require(path.join(process.cwd(), 'bin', 'koan'));
+var generate = require(path.join(process.cwd(), 'bin', 'new'));
 var exec = require('child_process').exec;
 
 describe('New application', function() {
@@ -102,22 +104,19 @@ describe('New application', function() {
   });
 
   it('should be successfully generated', function(done) {
-    exec(bin + ' new ' + appName, function(err) {
-      if (err)
-        return done(new Error(err));
-
-      assert(checkGeneratedFiles(appName), 'generated files don\'t match expected files');
+    generate('testApp', commander, function() {
+      checkGeneratedFiles(appName).should.be.eql(true, 'generated files don\'t match expected files');
       done();
     });
   });
 
-  it('should have all the default tests passing', function(done) {
-    exec('cd ' + appName + ' && npm install && npm test', function(err) {
-      if (err)
-        return done(new Error(err));
-
-      assert(!err, 'an error occurred while trying to test a newly created application');
-      done();
-    });
-  });
+//  it('should have all the default tests passing', function(done) {
+//    exec('cd ' + appName + ' && npm install && npm test', function(err) {
+//      if (err)
+//        return done(new Error(err));
+//
+//      should.not.exist(err);
+//      done();
+//    });
+//  });
 });

@@ -5,6 +5,7 @@
  * Dependencies
  */
 var _ = require('lodash');
+var path = require('path');
 var commander = require('commander');
 var NOOP = function () {};
 
@@ -14,20 +15,13 @@ var NOOP = function () {};
 module.exports = commander;
 
 /**
- * Normalizing the arguments
- */
-process.argv = _.map(process.argv, function(arg) {
-  return arg.toLowerCase();
-});
-
-/**
  * New application
  */
 commander
   .command('new')
   .description('generate new application')
   .usage('koan new <appName>')
-  .action(require('./new'))
+  .action(require(path.join(__dirname, 'new')))
   .unknownOption = NOOP;
 
 /**
@@ -58,7 +52,6 @@ commander
   .usage('[options] <command>')
   .option('--test', 'use testing environment')
   .option('--production', 'use production environment');
-
 commander
   .command('version')
 	.description('output version number')
@@ -68,7 +61,9 @@ commander
 
 commander.unknownOption = NOOP;
 
-commander.parse(process.argv);
+if (process.env.NODE_ENV !== 'test') {
+  commander.parse(process.argv);
 
-if ((process.env.NODE_ENV !== 'test')&&(commander.args.length === 0))
-  commander.help();
+  if (commander.args.length === 0)
+    commander.help();
+}
