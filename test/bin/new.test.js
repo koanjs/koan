@@ -110,13 +110,13 @@ describe('New application', function() {
     });
   });
 
-//  it('should have all the default tests passing', function(done) {
-//    exec('cd ' + appName + ' && npm install && npm test', function(err) {
-//      if (err)
-//        return done(new Error(err));
-//
-//      should.not.exist(err);
-//      done();
-//    });
-//  });
+  it('should have all the default tests passing', function(done) {
+    exec('cd ' + appName + ' && npm install && npm test', function(err) {
+      if (err)
+        return done(new Error(err));
+
+      should.not.exist(err);
+      done();
+    });
+  });
 });

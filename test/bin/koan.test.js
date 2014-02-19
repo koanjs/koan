@@ -44,4 +44,8 @@ describe('Program', function() {
     }).should.containEql('start');
     done();
   });
+
+  it('should have a command to generate a new controller');
+  it('should have a command to generate a new model');
+  it('should have a command to generate a new RESTful resource');
 });
