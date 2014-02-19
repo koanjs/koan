@@ -19,7 +19,7 @@ module.exports = function (appName, commander, cb) {
     }
 
     if (process.env.NODE_ENV !== 'test')
-      console.info('New Koan application is created.'.green);
+      console.info('New Koan.js application is created.'.green);
 
     if (cb)
       cb();
