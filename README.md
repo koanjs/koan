@@ -47,7 +47,7 @@ shot.
 
 ## Configuration
 
-* Add or disable middleware your new Koan application requires in `config/middleware.js`.
+* Add or disable middleware your new Koan.js application requires in `config/middleware.js`.
 * Configure your routes in `config/routes.js`.
 * Set other application options in `config/options.js`, they will be available during
 runtime via `app.options`.
