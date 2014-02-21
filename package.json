@@ -39,7 +39,7 @@
     "koa-compose": "~2.2.0",
     "koa-etag": "~1.2.2",
     "koa-conditional-get": "~1.0.1",
-    "koan-errors": "https://github.com/bredikhin/koan-errors/archive/master.tar.gz"
+    "koan-errors": "~0.0.2"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
