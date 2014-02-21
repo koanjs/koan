@@ -5,6 +5,8 @@
   "homepage": "https://github.com/bredikhin/koan",
   "keywords": [
     "koa",
+    "koajs",
+    "koa.js",
     "web",
     "web-framework",
     "framework",
@@ -36,7 +38,8 @@
     "koa-session": "~2.0.0",
     "koa-compose": "~2.2.0",
     "koa-etag": "~1.2.2",
-    "koa-conditional-get": "~1.0.1"
+    "koa-conditional-get": "~1.0.1",
+    "koan-errors": "https://github.com/bredikhin/koan-errors/archive/master.tar.gz"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
