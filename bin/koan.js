@@ -4,68 +4,66 @@
 /**
  * Dependencies
  */
-var argv = require('optimist').argv;
 var _ = require('lodash');
 var path = require('path');
-var fs = require('fs-extra');
-var fork = require('child_process').fork;
+var commander = require('commander');
+var NOOP = function () {};
 
-// Stringify args
-argv._ = _.map(argv._, function (arg) {
-  return arg + '';
-});
+/**
+ * Expose commander
+ */
+module.exports = commander;
 
-// Start this app
-if (argv._[0] && _.contains(['start', 'server', 's'], argv._[0])) {
-  fork(path.join(process.cwd(), 'index'), [], {execArgv: ['--harmony']});
-}
+/**
+ * New application
+ */
+commander
+  .command('new')
+  .description('generate new application')
+  .usage('koan new <appName>')
+  .action(require(path.join(__dirname, 'new')))
+  .unknownOption = NOOP;
 
-// Basic usage
-else if (argv._.length === 0) {
-  console.log('');
-  console.log('Welcome to Koan!');
-  console.log('');
-  displayUsage();
-}
+/**
+ * Start this application
+ */
+commander
+  .command('start')
+  .description('start the application')
+  .usage('koan start')
+  .action(require('./start'))
+  .unknownOption = NOOP;
 
-// Create a new app
-// second argument == app name
-else if (argv._[0].match(/^new$/)) {
+/**
+ * Help
+ */
+commander
+  .command('help')
+  .description('output usage information')
+  .usage('koan help')
+  .action(commander.help)
+  .unknownOption = NOOP;
 
-  verifyArg(1, "Please specify the name of the new project folder: e.g.\n koan new <appName>");
+/**
+ * Version
+ */
+commander
+  .version(require('../package.json').version, '-v, --version')
+  .usage('[options] <command>')
+  .option('--test', 'use testing environment')
+  .option('--production', 'use production environment');
+commander
+  .command('version')
+	.description('output version number')
+  .usage('koan version')
+	.action(commander.versionInformation)
+  .unknownOption = NOOP;
 
-  var destination = path.join(process.cwd(), argv._[1]);
+commander.unknownOption = NOOP;
 
-  fs.copy(path.join(__dirname, '../lib/boilerplates/application'), destination,  function(err) {
-    if (err) {
-      console.error(err);
-      process.exit(1);
-    }
+if (process.env.NODE_ENV !== 'test') {
+  commander.parse(process.argv);
 
-    console.info('New Koan application is created.');
-  });
-}
-
-// Unknown command, print out usage
-else {
-  console.log('');
-  displayUsage();
-  console.log.error(argv._[0] + ' is not a valid action.');
-}
-
-// Display usage
-function displayUsage() {
-  var usage = 'Usage: koan <command>\n\n';
-  usage += 'koan start: Run the app in the current dir\n';
-  usage += 'koan new <appName>: Create a new Koan project in a folder called <appName>\n';
-
-  console.info(usage);
-}
-
-// Verify that an argument exists
-function verifyArg(argNo, msg) {
-  if (!argv._[argNo]) {
-    console.error(msg);
-    process.exit(1);
-  }
+  if (commander.args.length === 0)
+    commander.help();
 }
