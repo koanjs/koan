@@ -81,7 +81,7 @@ describe('New application', function() {
 
     // Generate diff
     var diff = _.difference(files, expectedFiles);
-console.dir(diff);
+  
     // Uneven # of files
     if (files.length !== expectedFiles.length) {
       return false;
