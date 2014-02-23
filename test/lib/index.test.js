@@ -15,8 +15,28 @@ describe('Koan.js application', function() {
     done();
   });
 
-  it('should set the application options');
-  it('should set the keys for signing cookies');
+  it('should set the application options', function(done) {
+    var app = koan({
+      options: {
+        foo: 'bar'
+      }
+    });
+    app.options.foo.should.be.eql('bar');
+    done();
+  });
+
+  it('should set the keys for signing cookies', function(done) {
+    var app = koan({
+      options: {
+        cookies: {
+          keys: 'sign with this'
+        }
+      }
+    });
+    app.keys.should.be.ok;
+    done();
+  });
+
   it('should compose middleware stack');
   it('should set the routes properly');
   it('should provide a rendering engine for view scripts');
