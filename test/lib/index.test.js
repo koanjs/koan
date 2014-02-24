@@ -12,6 +12,7 @@ describe('Koan.js application', function() {
   it('should work with empty configuration', function(done) {
     var app = koan();
     app.should.be.ok;
+
     done();
   });
 
@@ -22,6 +23,7 @@ describe('Koan.js application', function() {
       }
     });
     app.options.foo.should.be.eql('bar');
+
     done();
   });
 
@@ -29,15 +31,34 @@ describe('Koan.js application', function() {
     var app = koan({
       options: {
         cookies: {
-          keys: 'sign with this'
+          keys: ['sign', 'with', 'this']
         }
       }
     });
     app.keys.should.be.ok;
+
     done();
   });
 
-  it('should compose middleware stack');
+  it('should compose middleware stack', function(done) {
+    var app = koan({
+      middleware: {
+        'koa-session': {},
+        'koa-response-time': true,
+        'koa-logger': true
+      }
+    });
+    app.middleware.should.be.an.Array.with.length(1);
+
+    done();
+  });
+
   it('should set the routes properly');
-  it('should provide a rendering engine for view scripts');
+
+  it('should provide a rendering engine for view scripts', function(done) {
+    var app = koan();
+    app.render.should.be.ok;
+
+    done();
+  });
 });
