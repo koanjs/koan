@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/bredikhin/koan.png?branch=master)](https://travis-ci.org/bredikhin/koan)
 [![Dependency Status](https://gemnasium.com/bredikhin/koan.png)](https://gemnasium.com/bredikhin/koan)
 [![Code Climate](https://codeclimate.com/github/bredikhin/koan.png)](https://codeclimate.com/github/bredikhin/koan)
+[![Coverage Status](https://coveralls.io/repos/bredikhin/koan/badge.png?branch=)](https://coveralls.io/r/bredikhin/koan?branch=)
 [![NPM version](https://badge.fury.io/js/koan.png)](http://badge.fury.io/js/koan)
 
 

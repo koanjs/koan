@@ -20,6 +20,7 @@ npm-debug.log
 
 coverage
 coverage.html
+.coveralls.yml
 
 ########################
 # bower

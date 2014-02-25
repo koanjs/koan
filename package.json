@@ -49,12 +49,15 @@
     "should": "~3.1.2",
     "commander": "~2.1.0",
     "colors": "~0.6.2",
-    "supertest": "~0.9.0"
+    "supertest": "~0.9.0",
+    "istanbul": "https://github.com/gotwarlost/istanbul/archive/harmony.tar.gz",
+    "coveralls": "~2.8.0"
   },
   "scripts": {
     "start": "node --harmony index.js",
     "debug": "node debug --harmony index.js",
-    "test": "PORT=9999 NODE_ENV=test ./node_modules/.bin/mocha --harmony --recursive -R spec",
+    "test": "PORT=9999 NODE_ENV=test node --harmony ./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha --report lcovonly -- --recursive test/**/*.js -R spec",
+    "posttest": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "autotest": "./node_modules/.bin/supervisor -i .tmp -q -n exit -x ./node_modules/.bin/mocha -- --harmony -R spec -G -b --recursive"
   },
   "engines": {
