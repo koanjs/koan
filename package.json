@@ -51,7 +51,8 @@
     "colors": "~0.6.2",
     "supertest": "~0.9.0",
     "istanbul": "https://github.com/gotwarlost/istanbul/archive/harmony.tar.gz",
-    "coveralls": "~2.8.0"
+    "coveralls": "~2.8.0",
+    "pre-commit": "0.0.4"
   },
   "scripts": {
     "start": "node --harmony index.js",
