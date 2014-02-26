@@ -27,6 +27,28 @@ describe('Koan.js application', function() {
     done();
   });
 
+  it('should set the application name', function(done) {
+    var app = koan({
+      options: {
+        name: 'SayMyNameSayMyName'
+      }
+    });
+    app.name.should.be.eql('SayMyNameSayMyName');
+
+    done();
+  });
+
+  it('should be able to override the application environment', function(done) {
+    var app = koan({
+      options: {
+        env: 'whatever'
+      }
+    });
+    app.env.should.be.eql('whatever');
+
+    done();
+  });
+
   it('should set the keys for signing cookies', function(done) {
     var app = koan({
       options: {
