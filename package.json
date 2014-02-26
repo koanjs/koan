@@ -58,7 +58,7 @@
     "start": "node --harmony index.js",
     "debug": "node debug --harmony index.js",
     "test": "PORT=9999 NODE_ENV=test node --harmony ./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha --report lcovonly -- --recursive test/**/*.js -R spec",
-    "posttest": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "posttest": "cat ./coverage/lcov.info | (./node_modules/coveralls/bin/coveralls.js || true) && rm -rf ./coverage",
     "autotest": "./node_modules/.bin/supervisor -i .tmp -q -n exit -x ./node_modules/.bin/mocha -- --harmony -R spec -G -b --recursive"
   },
   "engines": {
