@@ -62,6 +62,7 @@ describe('New application', function() {
       'config/routes.js',
       'config/options.js',
       'config/index.js',
+      'config/views.js',
       'config/environments',
       'config/environments/development.js',
       'config/environments/production.js',
