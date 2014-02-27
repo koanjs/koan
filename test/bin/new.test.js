@@ -105,7 +105,10 @@ describe('New application', function() {
     return cleanUp(appName, done);
   });
 
-  it('should be successfully generated', function(done) {
+
+  it('shouldn\'t be generated if a folder with the same name exists');
+
+  it('should be successfully generated if folder doesn\'t exist', function(done) {
     generate('testApp', commander, function() {
       checkGeneratedFiles(appName).should.be.eql(true, 'generated files don\'t match expected files');
       done();
