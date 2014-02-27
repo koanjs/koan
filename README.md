@@ -50,6 +50,7 @@ shot.
 
 * Add or disable middleware your new Koan.js application requires in `config/middleware.js`.
 * Configure your routes in `config/routes.js`.
+* Configure view scripts templating in `config/views.js`.
 * Set other application options in `config/options.js`, they will be available during
 runtime via `app.options`.
 
@@ -62,7 +63,7 @@ runtime via `app.options`.
 * [Koa-route](https://github.com/koajs/route) for routing,
 * [Koa-static](https://github.com/koajs/static) to serve static assets,
 * [Lodash](https://github.com/lodash/lodash) utilities,
-* [Optimist](https://github.com/substack/node-optimist) for option parsing,
+* [Commander](https://github.com/visionmedia/commander.js) for CLI,
 * [Fs-extra](https://github.com/jprichardson/node-fs-extra) for recursive file system operations.
 * [Koa-response-time](https://github.com/koajs/response-time) for X-Response-Time header,
 * [Koa-compress](https://github.com/koajs/compress) to enable response compression,
