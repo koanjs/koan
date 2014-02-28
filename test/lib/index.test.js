@@ -4,6 +4,7 @@
  * Dependencies
  */
 var should = require('should');
+var request = require('supertest');
 var _ = require('lodash');
 var path = require('path');
 var koan = require('../../lib');
@@ -62,10 +63,42 @@ describe('Koan.js application', function() {
     done();
   });
 
+  it('should generate CSRF tokens if they are enabled', function(done) {
+    var app = koan({
+      middleware: {
+        'koa-session': {
+          key: 'superkey'
+        }
+      },
+      options: {
+        cookies: {
+          keys: ['something to sign cookies']
+        },
+        csrf: true
+      }
+    });
+
+    app.use(function *(next) {
+      this.csrf.should.be.ok;
+      this.status = 204;
+    });
+
+    request(app.listen())
+      .get('/')
+      .expect(204)
+      .end(function(err, res) {
+        should(err).not.be.ok;
+
+        done();
+      });
+  });
+
   it('should compose middleware stack', function(done) {
     var app = koan({
       middleware: {
-        'koa-session': {},
+        'koa-session': {
+          key: 'sessionable'
+        },
         'koa-response-time': true,
         'koa-logger': true
       }
