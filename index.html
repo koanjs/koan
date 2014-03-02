@@ -36,6 +36,7 @@
 <p><a href="https://travis-ci.org/bredikhin/koan"><img src="https://travis-ci.org/bredikhin/koan.png?branch=master" alt="Build Status"></a>
 <a href="https://gemnasium.com/bredikhin/koan"><img src="https://gemnasium.com/bredikhin/koan.png" alt="Dependency Status"></a>
 <a href="https://codeclimate.com/github/bredikhin/koan"><img src="https://codeclimate.com/github/bredikhin/koan.png" alt="Code Climate"></a>
+<a href="https://coveralls.io/r/bredikhin/koan"><img src="https://coveralls.io/repos/bredikhin/koan/badge.png" alt="Coverage Status"></a>
 <a href="http://badge.fury.io/js/koan"><img src="https://badge.fury.io/js/koan.png" alt="NPM version"></a></p>
 
 <h2>
@@ -85,8 +86,9 @@ shot.</p>
 <a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
 
 <ul>
-<li>Add or disable middleware your new Koan application requires in <code>config/middleware.js</code>.</li>
+<li>Add or disable middleware your new Koan.js application requires in <code>config/middleware.js</code>.</li>
 <li>Configure your routes in <code>config/routes.js</code>.</li>
+<li>Configure view scripts templating in <code>config/views.js</code>.</li>
 <li>Set other application options in <code>config/options.js</code>, they will be available during
 runtime via <code>app.options</code>.</li>
 </ul><h2>
@@ -106,7 +108,7 @@ runtime via <code>app.options</code>.</li>
 <li>
 <a href="https://github.com/lodash/lodash">Lodash</a> utilities,</li>
 <li>
-<a href="https://github.com/substack/node-optimist">Optimist</a> for option parsing,</li>
+<a href="https://github.com/visionmedia/commander.js">Commander</a> for CLI,</li>
 <li>
 <a href="https://github.com/jprichardson/node-fs-extra">Fs-extra</a> for recursive file system operations.</li>
 <li>
