@@ -16,3 +16,8 @@ coverage.html
 # Utilities
 .jshintrc
 .travis.yml
+.coveralls.yml
+
+# IDE and editors
+.idea
+*.iml
