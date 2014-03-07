@@ -22,13 +22,12 @@
     "boilerplate"
   ],
   "dependencies": {
-    "koa": "~0.5.0",
+    "koa": "~0.5.1",
     "co-views": "~0.2.0",
     "koa-logger": "~1.2.0",
-    "koa-route": "~1.0.2",
+    "koa-route": "~1.1.0",
     "koa-static": "~1.4.2",
     "lodash": "~2.4.1",
-    "optimist": "~0.6.0",
     "fs-extra": "~0.8.1",
     "koa-response-time": "~1.0.1",
     "koa-compress": "~1.0.2",
