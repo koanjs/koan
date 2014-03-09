@@ -44,7 +44,6 @@ shot.
 2. Use `npm install` to install dependencies.
 3. Start your application with `koan start` (or just usual `node index.js`).
 4. Run tests with `npm test`.
-5. Autotest with `npm run autotest`.
 
 ## Configuration
 
