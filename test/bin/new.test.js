@@ -15,16 +15,24 @@ var exec = require('child_process').exec;
 describe('New application', function() {
   var bin = './bin/koan.js';
   var appName = 'testApp';
+  var anotherAppName = 'anotherTestApp';
 
   /**
    * Cleaning up the temporary testing application
    */
-  function cleanUp(appName, done) {
+  function cleanUp(done) {
     fs.exists(appName, function(exists) {
       if (exists) {
         wrench.rmdirSyncRecursive(appName);
       }
-      done();
+      
+      fs.exists(anotherAppName, function(exists) {
+        if (exists) {
+          wrench.rmdirSyncRecursive(anotherAppName);
+        }
+        
+        done();
+      });
     });
   }
 
@@ -98,19 +106,17 @@ describe('New application', function() {
   }
 
   before(function (done) {
-    return cleanUp(appName, done);
+    return cleanUp(done);
   });
 
   after(function (done) {
-    return cleanUp(appName, done);
+    return cleanUp(done);
   });
 
-
-  it('shouldn\'t be generated if a folder with the same name exists');
-
   it('should be successfully generated if folder doesn\'t exist', function(done) {
-    generate('testApp', commander, function() {
+    generate(appName, commander, function() {
       checkGeneratedFiles(appName).should.be.eql(true, 'generated files don\'t match expected files');
+
       done();
     });
   });
@@ -118,10 +124,23 @@ describe('New application', function() {
   it('should have all the default tests passing', function(done) {
     exec('cd ' + appName + ' && npm install && npm test', function(err) {
       if (err)
-        return done(new Error(err));
+        return done(err);
 
-      should.not.exist(err);
+      should(err).not.be.Error;
+
       done();
+    });
+  });
+
+  it('shouldn\'t be generated if a folder with the same name exists', function(done) {
+    generate(anotherAppName, commander, function(err) {
+      should(err).not.be.Error;
+
+      generate(anotherAppName, commander, function(err) {
+        should(err).be.Error;
+      
+        done();
+      });
     });
   });
 });

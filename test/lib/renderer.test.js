@@ -5,13 +5,13 @@
  */
 var should = require('should');
 var path = require('path');
-var render = require('../../lib/renderer').render;
+var cwd = process.cwd();
+var render = require(path.join(cwd, 'lib', 'renderer')).render;
 var config = {
   views: {
-    ext: 'ejs'
+    default: 'ejs'
   }
 };
-var cwd = process.cwd();
 
 describe('Renderer', function() {
   before(function(done) {
@@ -26,7 +26,14 @@ describe('Renderer', function() {
     done();
   });
 
-  it('should apply defaults on empty config passed');
+  it('should apply defaults on empty config passed', function(done) {
+    render()('test', {})(function(err, html) {
+      should(err).not.be.ok;
+      html.replace(/\n$/, '').should.be.eql('Cool-cool-cool!');
+
+      done();
+    });
+  });
 
   it('should pass configuration parameters', function(done) {
     render(config.views)('test', {})(function(err, html) {
