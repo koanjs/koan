@@ -87,7 +87,7 @@ describe('Koan.js application', function() {
       .get('/')
       .expect(204)
       .end(function(err, res) {
-        should(err).not.be.ok;
+        should(err).not.be.Error;
 
         done();
       });
@@ -108,7 +108,31 @@ describe('Koan.js application', function() {
     done();
   });
 
-  it('should set the routes properly');
+  it('should set the routes properly', function(done) {
+    var cwd = process.cwd();
+    process.chdir(path.join(cwd, 'test', 'fixtures', 'application'));
+
+    var app = koan({
+      routes: {
+        '/test': {
+          controller: 'index',
+          action: 'test'
+        }
+      }
+    });
+    
+    request(app.listen())
+      .get('/test')
+      .expect(200)
+      .expect('/index/test')
+      .end(function(err, res) {
+        should(err).not.be.Error;
+
+        process.chdir(cwd);
+        
+        done();
+      });
+  });
 
   it('should provide a rendering engine for view scripts', function(done) {
     var app = koan();

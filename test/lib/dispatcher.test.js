@@ -19,7 +19,7 @@ describe('Dispatcher', function() {
       .expect(200)
       .expect(urlPath)
       .end(function(err, res) {
-        should(err).not.be.ok;
+        should(err).not.be.Error;
 
         done();
       });
