@@ -57,6 +57,8 @@ describe('New application', function() {
       'views/pages',
       'views/pages/about.ejs',
       'views/errors.html',
+      'views/layout.ejs',
+      'views/another-layout.ejs',
       'public/images',
       'public/js',
       'public/robots.txt',

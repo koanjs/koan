@@ -29,7 +29,7 @@ describe('Renderer', function() {
   it('should apply defaults on empty config passed', function(done) {
     render()('test', {})(function(err, html) {
       should(err).not.be.ok;
-      html.replace(/\n$/, '').should.be.eql('Cool-cool-cool!');
+      html.replace(/\n$/, '').should.containEql('Cool-cool-cool!');
 
       done();
     });
@@ -38,7 +38,7 @@ describe('Renderer', function() {
   it('should pass configuration parameters', function(done) {
     render(config.views)('test', {})(function(err, html) {
       should(err).not.be.ok;
-      html.replace(/\n$/, '').should.be.eql('Cool-cool-cool!');
+      html.replace(/\n$/, '').should.containEql('Cool-cool-cool!');
 
       done();
     });
