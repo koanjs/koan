@@ -43,7 +43,7 @@
     "koa-csrf": "~1.0.1"
   },
   "devDependencies": {
-    "mocha": "~1.17.0",
+    "mocha": "~1.18.0",
     "wrench": "~1.5.6",
     "should": "~3.1.2",
     "commander": "~2.1.0",
