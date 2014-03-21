@@ -53,11 +53,11 @@ shot.
 * Set other application options in `config/options.js`, they will be available during
 runtime via `app.options`.
 
-
 ## Dependencies
 
 * [Koa.js](https://github.com/koajs/koa) as the main application framework,
-* [Co-views](https://github.com/visionmedia/co-views) for template rendering,
+* [Koan-views](https://github.com/bredikhin/koan-views) for template rendering with layouts,
+* [Koan-errors](https://github.com/bredikhin/koan-errors) for error handling,
 * [Koa-logger](https://github.com/koajs/logger) as logger middleware,
 * [Koa-route](https://github.com/koajs/route) for routing,
 * [Koa-static](https://github.com/koajs/static) to serve static assets,
@@ -71,7 +71,7 @@ runtime via `app.options`.
 * [Koa-compose](https://github.com/koajs/compose) to compose middleware,
 * [Koa-etag](https://github.com/koajs/etag) for ETag support,
 * [Redis](https://github.com/mranney/node_redis) for temporary storage,
-* [Ejs](https://github.com/visionmedia/ejs) for templating.
+* [Ejs](https://github.com/visionmedia/ejs) as default templating option.
 
 ## Contributions
 
