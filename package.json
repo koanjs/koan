@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "koa": "~0.5.1",
-    "co-views": "~0.2.0",
+    "koan-views": "~0.0.3",
     "koa-logger": "~1.2.0",
     "koa-route": "~1.1.0",
     "koa-static": "~1.4.2",
@@ -51,7 +51,7 @@
     "supertest": "~0.9.0",
     "istanbul": "https://github.com/gotwarlost/istanbul/archive/harmony.tar.gz",
     "coveralls": "~2.8.0",
-    "pre-commit": "0.0.4"
+    "pre-commit": "~0.0.4"
   },
   "scripts": {
     "start": "node --harmony index.js",
