@@ -1,7 +1,7 @@
 {
   "name": "koan",
   "description": "A Koa.js Application Boilerplate",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "homepage": "https://github.com/bredikhin/koan",
   "keywords": [
     "koa",
@@ -41,13 +41,13 @@
     "koan-errors": "~0.0.2",
     "methods": "~0.1.0",
     "commander": "~2.1.0",
+    "colors": "~0.6.2",
     "koa-csrf": "~1.0.1"
   },
   "devDependencies": {
     "mocha": "~1.18.0",
     "wrench": "~1.5.6",
     "should": "~3.1.2",
-    "colors": "~0.6.2",
     "supertest": "~0.10.0",
     "istanbul": "https://github.com/gotwarlost/istanbul/archive/harmony.tar.gz",
     "coveralls": "~2.10.0",
