@@ -40,13 +40,13 @@
     "koa-conditional-get": "~1.0.1",
     "koan-errors": "~0.0.2",
     "methods": "~0.1.0",
+    "commander": "~2.1.0",
     "koa-csrf": "~1.0.1"
   },
   "devDependencies": {
     "mocha": "~1.18.0",
     "wrench": "~1.5.6",
     "should": "~3.1.2",
-    "commander": "~2.1.0",
     "colors": "~0.6.2",
     "supertest": "~0.10.0",
     "istanbul": "https://github.com/gotwarlost/istanbul/archive/harmony.tar.gz",
