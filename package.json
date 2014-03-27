@@ -1,7 +1,7 @@
 {
   "name": "koan",
   "description": "A Koa.js Application Boilerplate",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "homepage": "https://github.com/bredikhin/koan",
   "keywords": [
     "koa",
