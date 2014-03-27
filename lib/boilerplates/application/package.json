@@ -3,14 +3,23 @@
   "description": "Koa.js application based on Koan boilerplate",
   "version": "0.0.1",
   "dependencies": {
-    "koan": "~0.0.9",
-    "redis": "~0.10.0",
-    "lodash": "~2.4.1"
+    "koan": "^0.0.12",
+    "redis": "^0.10.0",
+    "lodash": "^2.4.1",
+    "koa-session": "^2.0.0",
+    "koa-response-time": "^1.0.2",
+    "koa-logger": "^1.2.0",
+    "koan-errors": "^0.0.3",
+    "koa-conditional-get": "^1.0.1",
+    "koa-etag": "^1.2.3",
+    "koa-compress": "^1.0.4",
+    "koa-static": "^1.4.3",
+    "koa-csrf": "^1.0.1"
   },
   "devDependencies": {
-    "supertest": "~0.9.0",
-    "mocha": "~1.17.0",
-    "supervisor": "~0.5.6"
+    "supertest": "^0.9.0",
+    "mocha": "^1.17.0",
+    "supervisor": "^0.5.6"
   },
   "scripts": {
     "start": "node --harmony index.js",
@@ -22,7 +31,8 @@
     "node": ">= 11.3"
   },
   "main": "index.js",
-  "repository": "",
+  "repository": {
+  },
   "author": "",
   "license": ""
 }
