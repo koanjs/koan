@@ -28,7 +28,7 @@
     "lodash": "~2.4.1",
     "fs-extra": "~0.8.1",
     "redis": "~0.10.0",
-    "ejs": "~0.8.5",
+    "ejs": "~1.0.0",
     "koa-compose": "~2.2.0",
     "methods": "~0.1.0",
     "commander": "~2.1.0",
