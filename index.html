@@ -1,33 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Koan by koanjs</title>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <title>Koan by bredikhin</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-
-    <header>
-      <div class="container">
+    <div class="wrapper">
+      <header>
         <h1>Koan</h1>
-        <h2>Koa.js Application Boilerplate</h2>
+        <p>Koa.js Application Boilerplate</p>
 
-        <section id="downloads">
-          <a href="https://github.com/bredikhin/koan/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/bredikhin/koan/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/bredikhin/koan" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+        <p class="view"><a href="https://github.com/koanjs/koan">View the Project on GitHub <small>koanjs/koan</small></a></p>
 
-    <div class="container">
-      <section id="main_content">
+
+        <ul>
+          <li><a href="https://github.com/koanjs/koan/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/koanjs/koan/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/koanjs/koan">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h1>
 <a name="koanjs-a-koajs-application-boilerplate" class="anchor" href="#koanjs-a-koajs-application-boilerplate"><span class="octicon octicon-link"></span></a>Koan.js: A Koa.js Application Boilerplate</h1>
 
@@ -81,7 +81,6 @@ shot.</p>
 <li>Use <code>npm install</code> to install dependencies.</li>
 <li>Start your application with <code>koan start</code> (or just usual <code>node index.js</code>).</li>
 <li>Run tests with <code>npm test</code>.</li>
-<li>Autotest with <code>npm run autotest</code>.</li>
 </ol><h2>
 <a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
 
@@ -98,7 +97,9 @@ runtime via <code>app.options</code>.</li>
 <li>
 <a href="https://github.com/koajs/koa">Koa.js</a> as the main application framework,</li>
 <li>
-<a href="https://github.com/visionmedia/co-views">Co-views</a> for template rendering,</li>
+<a href="https://github.com/bredikhin/koan-views">Koan-views</a> for template rendering with layouts,</li>
+<li>
+<a href="https://github.com/bredikhin/koan-errors">Koan-errors</a> for error handling,</li>
 <li>
 <a href="https://github.com/koajs/logger">Koa-logger</a> as logger middleware,</li>
 <li>
@@ -126,7 +127,7 @@ runtime via <code>app.options</code>.</li>
 <li>
 <a href="https://github.com/mranney/node_redis">Redis</a> for temporary storage,</li>
 <li>
-<a href="https://github.com/visionmedia/ejs">Ejs</a> for templating.</li>
+<a href="https://github.com/visionmedia/ejs">Ejs</a> as default templating option.</li>
 </ul><h2>
 <a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
 
@@ -141,8 +142,12 @@ runtime via <code>app.options</code>.</li>
 
 <p>Copyright (c) 2013-2014 <a href="http://ruslanbredikhin.com/">Ruslan Bredikhin</a></p>
       </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/koanjs">koanjs</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
