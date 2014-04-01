@@ -1,8 +1,8 @@
 {
   "name": "koan",
   "description": "A Koa.js Application Boilerplate",
-  "version": "0.0.13",
-  "homepage": "https://github.com/bredikhin/koan",
+  "version": "0.0.14",
+  "homepage": "https://github.com/koanjs/koan",
   "keywords": [
     "koa",
     "koajs",
@@ -72,10 +72,10 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com:bredikhin/koan.git"
+    "url": "git://github.com:koanjs/koan.git"
   },
   "bugs": {
-    "url": "http://github.com/bredikhin/koan/issues"
+    "url": "http://github.com/koanjs/koan/issues"
   },
   "author": "Ruslan Bredikhin",
   "license": {
