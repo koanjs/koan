@@ -1,13 +1,12 @@
 # Koan.js: A Koa.js Application Boilerplate
 
-![Define Koan](https://raw.github.com/bredikhin/koan/master/lib/boilerplates/application/public/images/define_koan.png)
+![Define Koan](https://raw.github.com/koanjs/koan/master/lib/boilerplates/application/public/images/define_koan.png)
 
-[![Build Status](https://travis-ci.org/bredikhin/koan.png?branch=master)](https://travis-ci.org/bredikhin/koan)
-[![Dependency Status](https://gemnasium.com/bredikhin/koan.png)](https://gemnasium.com/bredikhin/koan)
-[![Code Climate](https://codeclimate.com/github/bredikhin/koan.png)](https://codeclimate.com/github/bredikhin/koan)
-[![Coverage Status](https://coveralls.io/repos/bredikhin/koan/badge.png)](https://coveralls.io/r/bredikhin/koan)
+[![Build Status](https://travis-ci.org/koanjs/koan.png?branch=master)](https://travis-ci.org/koanjs/koan)
+[![Dependency Status](https://gemnasium.com/koanjs/koan.png)](https://gemnasium.com/koanjs/koan)
+[![Code Climate](https://codeclimate.com/github/koanjs/koan.png)](https://codeclimate.com/github/koanjs/koan)
+[![Coverage Status](https://coveralls.io/repos/koanjs/koan/badge.png)](https://coveralls.io/r/koanjs/koan)
 [![NPM version](https://badge.fury.io/js/koan.png)](http://badge.fury.io/js/koan)
-
 
 ## What is Koa.js?
 
@@ -58,20 +57,11 @@ runtime via `app.options`.
 * [Koa.js](https://github.com/koajs/koa) as the main application framework,
 * [Koan-views](https://github.com/bredikhin/koan-views) for template rendering with layouts,
 * [Koan-errors](https://github.com/bredikhin/koan-errors) for error handling,
-* [Koa-logger](https://github.com/koajs/logger) as logger middleware,
 * [Koa-route](https://github.com/koajs/route) for routing,
-* [Koa-static](https://github.com/koajs/static) to serve static assets,
 * [Lodash](https://github.com/lodash/lodash) utilities,
 * [Commander](https://github.com/visionmedia/commander.js) for CLI,
-* [Fs-extra](https://github.com/jprichardson/node-fs-extra) for recursive file system operations.
-* [Koa-response-time](https://github.com/koajs/response-time) for X-Response-Time header,
-* [Koa-compress](https://github.com/koajs/compress) to enable response compression,
-* [Koa-ratelimit](https://github.com/koajs/ratelimit) for rate limiting,
-* [Koa-session](https://github.com/koajs/session) for session support,
-* [Koa-compose](https://github.com/koajs/compose) to compose middleware,
-* [Koa-etag](https://github.com/koajs/etag) for ETag support,
-* [Redis](https://github.com/mranney/node_redis) for temporary storage,
-* [Ejs](https://github.com/visionmedia/ejs) as default templating option.
+* [Fs-extra](https://github.com/jprichardson/node-fs-extra) for recursive file system operations,
+* [Koa-compose](https://github.com/koajs/compose) to compose middleware.
 
 ## Contributions
 
