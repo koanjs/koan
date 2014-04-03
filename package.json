@@ -31,7 +31,7 @@
     "ejs": "~1.0.0",
     "koa-compose": "~2.2.0",
     "methods": "~0.1.0",
-    "commander": "~2.1.0",
+    "commander": "~2.2.0",
     "colors": "~0.6.2"
   },
   "devDependencies": {
