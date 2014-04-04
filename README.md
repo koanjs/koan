@@ -3,8 +3,8 @@
 ![Define Koan](https://raw.github.com/koanjs/koan/master/lib/boilerplates/application/public/images/define_koan.png)
 
 [![Build Status](https://travis-ci.org/koanjs/koan.png?branch=master)](https://travis-ci.org/koanjs/koan)
-[![Dependency Status](https://gemnasium.com/bredikhin/koan.png)](https://gemnasium.com/koanjs/koan)
-[![Code Climate](https://codeclimate.com/github/bredikhin/koan.png)](https://codeclimate.com/github/koanjs/koan)
+[![Dependency Status](https://gemnasium.com/bredikhin/koan.png)](https://gemnasium.com/bredikhin/koan)
+[![Code Climate](https://codeclimate.com/github/bredikhin/koan.png)](https://codeclimate.com/github/bredikhin/koan)
 [![Coverage Status](https://coveralls.io/repos/bredikhin/koan/badge.png)](https://coveralls.io/r/bredikhin/koan)
 [![NPM version](https://badge.fury.io/js/koan.png)](http://badge.fury.io/js/koan)
 
