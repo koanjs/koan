@@ -47,7 +47,7 @@
     "koa-static": "^1.4.3",
     "mocha": "~1.18.0",
     "wrench": "~1.5.6",
-    "should": "~3.1.2",
+    "should": "^3.2.0",
     "supertest": "~0.10.0",
     "istanbul": "https://github.com/gotwarlost/istanbul/archive/harmony.tar.gz",
     "coveralls": "~2.10.0",
