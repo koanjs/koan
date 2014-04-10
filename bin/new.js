@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * New application generation
  */
@@ -8,18 +10,7 @@
 var path = require('path');
 var colors = require('colors');
 var fs = require('fs-extra');
-
-function fail(err, cb) {
-  if (err) {
-    if (err) {
-      if (cb)
-        return cb(err);
-
-      console.error(err.message.red);
-      process.exit(1);
-    }
-  }  
-}
+var fail = require('./fail');
 
 module.exports = function (appName, commander, cb) {
   var destination = path.join(process.cwd(), appName);
