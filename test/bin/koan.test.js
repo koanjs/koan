@@ -45,7 +45,24 @@ describe('Program', function() {
     done();
   });
 
-  it('should have a command to generate a new controller');
-  it('should have a command to generate a new model');
-  it('should have a command to generate a new RESTful resource');
+  it('should have a command to generate a new controller', function(done) {
+    _.map(commander.commands, function(command) {
+      return command._name;
+    }).should.containEql('controller');
+    done();
+  });
+
+  it('should have a command to generate a new model', function(done) {
+    _.map(commander.commands, function(command) {
+      return command._name;
+    }).should.containEql('model');
+    done();
+  });
+
+  it('should have a command to generate a new RESTful resource', function(done) {
+    _.map(commander.commands, function(command) {
+      return command._name;
+    }).should.containEql('resource');
+    done();
+  });
 });
