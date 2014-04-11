@@ -35,6 +35,36 @@ commander
   .unknownOption = NOOP;
 
 /**
+ * New controller
+ */
+commander
+  .command('controller')
+  .description('generate new controller')
+  .usage('koan controller <controllerName>')
+  .action(require(path.join(__dirname, 'controller')))
+  .unknownOption = NOOP;
+
+/**
+ * New model
+ */
+commander
+  .command('model')
+  .description('generate new model')
+  .usage('koan model <modelName>')
+  .action(require(path.join(__dirname, 'model')))
+  .unknownOption = NOOP;
+
+/**
+ * New resource
+ */
+commander
+  .command('resource')
+  .description('generate new resource')
+  .usage('koan resource <resourceName>')
+  .action(require(path.join(__dirname, 'resource')))
+  .unknownOption = NOOP;
+
+/**
  * Help
  */
 commander
