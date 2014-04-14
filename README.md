@@ -52,6 +52,14 @@ shot.
 * Set other application options in `config/options.js`, they will be available during
 runtime via `app.options`.
 
+## Scaffolding
+
+* Run `koan controller <controllerName>` while inside the project root in order to generate a new controller.
+* Run `koan model <modelName>` while inside the project root in order to generate a new model.
+* Run `koan resource <resourceName>` while inside the project root in order to generate both controller and model (no automated RESTful routing generation is implemented at this point, so you will have to describe the routes manually).
+
+More scaffolds to come.
+
 ## Dependencies
 
 * [Koa.js](https://github.com/koajs/koa) as the main application framework,
