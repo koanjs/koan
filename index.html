@@ -31,9 +31,9 @@
         <h1>
 <a name="koanjs-a-koajs-application-boilerplate" class="anchor" href="#koanjs-a-koajs-application-boilerplate"><span class="octicon octicon-link"></span></a>Koan.js: A Koa.js Application Boilerplate</h1>
 
-<p><img src="https://raw.github.com/bredikhin/koan/master/lib/boilerplates/application/public/images/define_koan.png" alt="Define Koan"></p>
+<p><img src="https://raw.github.com/koanjs/koan/master/lib/boilerplates/application/public/images/define_koan.png" alt="Define Koan"></p>
 
-<p><a href="https://travis-ci.org/bredikhin/koan"><img src="https://travis-ci.org/bredikhin/koan.png?branch=master" alt="Build Status"></a>
+<p><a href="https://travis-ci.org/koanjs/koan"><img src="https://travis-ci.org/koanjs/koan.png?branch=master" alt="Build Status"></a>
 <a href="https://gemnasium.com/bredikhin/koan"><img src="https://gemnasium.com/bredikhin/koan.png" alt="Dependency Status"></a>
 <a href="https://codeclimate.com/github/bredikhin/koan"><img src="https://codeclimate.com/github/bredikhin/koan.png" alt="Code Climate"></a>
 <a href="https://coveralls.io/r/bredikhin/koan"><img src="https://coveralls.io/repos/bredikhin/koan/badge.png" alt="Coverage Status"></a>
@@ -91,6 +91,15 @@ shot.</p>
 <li>Set other application options in <code>config/options.js</code>, they will be available during
 runtime via <code>app.options</code>.</li>
 </ul><h2>
+<a name="scaffolding" class="anchor" href="#scaffolding"><span class="octicon octicon-link"></span></a>Scaffolding</h2>
+
+<ul>
+<li>Run <code>koan controller &lt;controllerName&gt;</code> while inside the project root in order to generate a new controller.</li>
+<li>Run <code>koan model &lt;modelName&gt;</code> while inside the project root in order to generate a new model.</li>
+<li>Run <code>koan resource &lt;resourceName&gt;</code> while inside the project root in order to generate both controller and model (no automated RESTful routing generation is implemented at this point, so you will have to describe the routes manually).</li>
+</ul><p>More scaffolds to come.</p>
+
+<h2>
 <a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
 <ul>
@@ -101,33 +110,15 @@ runtime via <code>app.options</code>.</li>
 <li>
 <a href="https://github.com/bredikhin/koan-errors">Koan-errors</a> for error handling,</li>
 <li>
-<a href="https://github.com/koajs/logger">Koa-logger</a> as logger middleware,</li>
-<li>
 <a href="https://github.com/koajs/route">Koa-route</a> for routing,</li>
-<li>
-<a href="https://github.com/koajs/static">Koa-static</a> to serve static assets,</li>
 <li>
 <a href="https://github.com/lodash/lodash">Lodash</a> utilities,</li>
 <li>
 <a href="https://github.com/visionmedia/commander.js">Commander</a> for CLI,</li>
 <li>
-<a href="https://github.com/jprichardson/node-fs-extra">Fs-extra</a> for recursive file system operations.</li>
+<a href="https://github.com/jprichardson/node-fs-extra">Fs-extra</a> for recursive file system operations,</li>
 <li>
-<a href="https://github.com/koajs/response-time">Koa-response-time</a> for X-Response-Time header,</li>
-<li>
-<a href="https://github.com/koajs/compress">Koa-compress</a> to enable response compression,</li>
-<li>
-<a href="https://github.com/koajs/ratelimit">Koa-ratelimit</a> for rate limiting,</li>
-<li>
-<a href="https://github.com/koajs/session">Koa-session</a> for session support,</li>
-<li>
-<a href="https://github.com/koajs/compose">Koa-compose</a> to compose middleware,</li>
-<li>
-<a href="https://github.com/koajs/etag">Koa-etag</a> for ETag support,</li>
-<li>
-<a href="https://github.com/mranney/node_redis">Redis</a> for temporary storage,</li>
-<li>
-<a href="https://github.com/visionmedia/ejs">Ejs</a> as default templating option.</li>
+<a href="https://github.com/koajs/compose">Koa-compose</a> to compose middleware.</li>
 </ul><h2>
 <a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
 
