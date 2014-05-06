@@ -22,7 +22,7 @@
     "boilerplate"
   ],
   "dependencies": {
-    "koa": "^0.5.5",
+    "koa": "^0.6.0",
     "koan-views": "0.0.4",
     "koa-route": "^1.1.0",
     "lodash": "^2.4.1",
@@ -42,12 +42,12 @@
     "koan-errors": "0.0.4",
     "koa-conditional-get": "^1.0.1",
     "koa-etag": "^1.2.3",
-    "koa-compress": "^1.0.4",
+    "koa-compress": "^1.0.6",
     "koa-static": "^1.4.3",
     "mocha": "^1.18.2",
-    "wrench": "^1.5.6",
-    "should": "^3.2.0",
-    "supertest": "0.10.0",
+    "wrench": "^1.5.8",
+    "should": "^3.3.1",
+    "supertest": "0.12.0",
     "istanbul": "https://github.com/gotwarlost/istanbul/archive/harmony.tar.gz",
     "coveralls": "^2.10.0",
     "pre-commit": "0.0.7"
