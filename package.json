@@ -32,7 +32,10 @@
     "koa-compose": "^2.2.0",
     "methods": "^0.1.0",
     "commander": "^2.2.0",
-    "colors": "^0.6.2"
+    "colors": "^0.6.2",
+    "async": "^0.8.0",
+    "jugglingdb": "^0.2.14",
+    "co-jugglingdb": "^2.0.1"
   },
   "devDependencies": {
     "koa-csrf": "^1.0.1",
