@@ -71,6 +71,7 @@ describe('New application', function() {
       'config/redis.js',
       'config/routes.js',
       'config/options.js',
+      'config/models.js',
       'config/index.js',
       'config/views.js',
       'config/environments',
