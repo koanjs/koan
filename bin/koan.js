@@ -84,9 +84,9 @@ commander
   .option('--production', 'use production environment');
 commander
   .command('version')
-	.description('output version number')
+  .description('output version number')
   .usage('koan version')
-	.action(commander.versionInformation)
+  .action(commander.versionInformation)
   .unknownOption = NOOP;
 
 commander.unknownOption = NOOP;
