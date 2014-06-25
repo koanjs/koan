@@ -5,10 +5,7 @@
  */
 var should = require('should');
 var path = require('path');
-var request = require('supertest');
-var koa = require('koa');
-var compose = require('koa-compose');
-var dispatch = require('../../lib/dispatcher').routes;
+var loadModels = require('../../lib/modeler').load;
 var cwd = process.cwd();
 
 describe('Modeler', function() {
@@ -24,5 +21,15 @@ describe('Modeler', function() {
     done();
   });
 
-  it('should globalize all the models from the given folder');
+  it('should globalize all the models from the given folder', function(done) {
+    loadModels({
+      adapter: {
+        memory: {}
+      }
+    });
+
+    One.should.be.a.Function;
+
+    done();
+  });
 });
